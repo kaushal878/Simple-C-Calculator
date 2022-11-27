@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-
-
 int main(int argc, char *argv[])
 {
   float valueOne;
@@ -16,13 +14,13 @@ int main(int argc, char *argv[])
 
   switch(operator)
     {
-    case '/': answer = valueOne/valueTwo;
-      break;
-    case '*': answer = valueOne*valueTwo;
-      break;
     case '+': answer = valueOne+valueTwo;
       break;
     case '-': answer = valueOne-valueTwo;
+      break;
+      case '/': answer = valueOne/valueTwo;
+      break;
+    case '*': answer = valueOne*valueTwo;
       break;
     case '^': answer = pow(valueOne,valueTwo);
       break;
